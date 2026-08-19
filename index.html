@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Avesh Kumar - Software Developer & .NET / AI Context Protocol (MCP) Backend Specialist with 1.5+ years of experience in C#, ASP.NET Core, Entity Framework Core, SQL Server & Angular.">
+  <meta name="author" content="Avesh Kumar">
+  <title>Avesh Kumar | .NET & AI Backend Specialist</title>
+  
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <a href="#" class="nav-brand">
+      <span class="brand-badge">AK</span>
+      <span class="brand-text">Avesh<span class="gradient-text">.Dev</span></span>
+    </a>
+    
+    <ul class="nav-links">
+      <li><a href="#about" class="nav-link active">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#experience" class="nav-link">Experience</a></li>
+      <li><a href="#terminal" class="nav-link">Code Sandbox</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <a href="avesh resume.pdf" download class="btn btn-primary">
+        <i class="fa-solid fa-download"></i> Resume PDF
+      </a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="about">
+    <div class="hero-content">
+      <div class="hero-status">
+        <span class="status-dot"></span> Available for New Opportunities & Remote Roles
+      </div>
+      
+      <h1 class="hero-title">
+        Building High-Performance <span class="gradient-text">.NET Backend Systems</span> & AI/MCP Solutions
+      </h1>
+      
+      <p class="hero-subtitle">
+        Software Developer with 1.5+ years of experience crafting REST APIs, scalable ASP.NET Core architectures, SQL Server query optimizations, and AI-driven Model Context Protocol (MCP) tools.
+      </p>
+      
+      <div class="hero-ctas">
+        <a href="#contact" class="btn btn-primary">
+          <i class="fa-solid fa-paper-plane"></i> Let's Talk
+        </a>
+        <a href="#projects" class="btn btn-glass">
+          <i class="fa-solid fa-code"></i> Explore Projects
+        </a>
+      </div>
+      
+      <div class="hero-stats">
+        <div class="stat-card">
+          <div class="stat-num" data-target="1.5">1.5+</div>
+          <div class="stat-label">Years Experience</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num" data-target="65">65+</div>
+          <div class="stat-label">Store Locations Integrated</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num" data-target="4">4+</div>
+          <div class="stat-label">Major Enterprise Projects</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Live Code Preview Card -->
+    <div class="hero-graphic">
+      <div class="hero-code-card">
+        <div class="code-header">
+          <div class="code-dots">
+            <span class="code-dot dot-red"></span>
+            <span class="code-dot dot-yellow"></span>
+            <span class="code-dot dot-green"></span>
+          </div>
+          <div class="code-title">SalesAnalyticsController.cs</div>
+        </div>
+        <div class="code-body">
+          <pre><code><span class="cm">// MCP Sales Analytics Integration API</span>
+[<span class="type">ApiController</span>]
+[<span class="type">Route</span>(<span class="str">"api/v1/mcp/analytics"</span>)]
+[<span class="type">Authorize</span>(Roles = <span class="str">"AI_Agent"</span>)]
+<span class="kw">public class</span> <span class="type">SalesAnalyticsController</span> : <span class="type">ControllerBase</span>
+{
+    <span class="kw">private readonly</span> <span class="type">ISalesService</span> _salesService;
+
+    [<span class="type">HttpPost</span>(<span class="str">"get_sales_stats"</span>)]
+    <span class="kw">public async</span> <span class="type">Task</span>&lt;<span class="type">IActionResult</span>&gt; GetStats([<span class="type">FromBody</span>] <span class="type">McpQuery</span> query)
+    {
+        <span class="kw">var</span> kpiResult = <span class="kw">await</span> _salesService
+            .<span class="func">GetStoreKpiAsync</span>(query.StoreId, query.DateRange);
+        
+        <span class="kw">return</span> <span class="func">Ok</span>(<span class="kw">new</span> { Status = <span class="str">"Success"</span>, Data = kpiResult });
+    }
+}</code></pre>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technical Skills Section -->
+  <section class="section" id="skills">
+    <div class="section-header">
+      <span class="section-tag">Technical Expertise</span>
+      <h2 class="section-title">Core Skills & Modern Tech Stack</h2>
+      <p class="section-desc">Specialized in Microsoft backend ecosystem, database optimization, REST API security, and AI context integration.</p>
+    </div>
+
+    <div class="skills-tabs">
+      <button class="skill-tab active" data-filter="all">All Tech</button>
+      <button class="skill-tab" data-filter="dotnet">.NET Stack</button>
+      <button class="skill-tab" data-filter="ai">AI & MCP</button>
+      <button class="skill-tab" data-filter="database">Databases</button>
+      <button class="skill-tab" data-filter="frontend">Frontend & Tools</button>
+    </div>
+
+    <div class="skills-grid">
+      <div class="skill-card" data-category="dotnet">
+        <div class="skill-icon"><i class="fa-brands fa-microsoft"></i></div>
+        <h3 class="skill-title">C# & ASP.NET Core</h3>
+        <p class="skill-desc">Building high-throughput Web APIs, MVC applications, dependency injection, and clean architecture.</p>
+      </div>
+
+      <div class="skill-card" data-category="dotnet">
+        <div class="skill-icon"><i class="fa-solid fa-layer-group"></i></div>
+        <h3 class="skill-title">EF Core & ADO.NET</h3>
+        <p class="skill-desc">ORM mappings, LINQ queries, raw SQL optimization, tracking, and database migration strategies.</p>
+      </div>
+
+      <div class="skill-card" data-category="ai">
+        <div class="skill-icon"><i class="fa-solid fa-robot"></i></div>
+        <h3 class="skill-title">Model Context Protocol (MCP)</h3>
+        <p class="skill-desc">Integrating MCP analytics layers to connect Claude AI agents directly with live SQL Server stored procedures.</p>
+      </div>
+
+      <div class="skill-card" data-category="ai">
+        <div class="skill-icon"><i class="fa-solid fa-brain"></i></div>
+        <h3 class="skill-title">LLM Integration & Prompting</h3>
+        <p class="skill-desc">Designing multi-provider LLM chat assistants for e-commerce, natural language routing, and context switching.</p>
+      </div>
+
+      <div class="skill-card" data-category="database">
+        <div class="skill-icon"><i class="fa-solid fa-database"></i></div>
+        <h3 class="skill-title">SQL Server & MySQL</h3>
+        <p class="skill-desc">Stored procedure creation, index tuning, transaction management, schema design, and audit logging.</p>
+      </div>
+
+      <div class="skill-card" data-category="dotnet">
+        <div class="skill-icon"><i class="fa-solid fa-shield-halved"></i></div>
+        <h3 class="skill-title">JWT & RBAC Security</h3>
+        <p class="skill-desc">Implementing JSON Web Tokens, Role-Based Access Control, SHA-256 API key authentication, and rate limiting.</p>
+      </div>
+
+      <div class="skill-card" data-category="frontend">
+        <div class="skill-icon"><i class="fa-brands fa-angular"></i></div>
+        <h3 class="skill-title">Angular (Supporting Frontend)</h3>
+        <p class="skill-desc">Developing SPAs with modular components, reactive services, routing, and REST API integration.</p>
+      </div>
+
+      <div class="skill-card" data-category="frontend">
+        <div class="skill-icon"><i class="fa-solid fa-code-branch"></i></div>
+        <h3 class="skill-title">Git & Developer Tools</h3>
+        <p class="skill-desc">Visual Studio, VS Code, Postman, Git workflow, Swagger/OpenAPI documentation, and unit testing.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Showcase Section -->
+  <section class="section" id="projects">
+    <div class="section-header">
+      <span class="section-tag">Featured Work</span>
+      <h2 class="section-title">Engineering Highlights</h2>
+      <p class="section-desc">Key projects delivered across e-commerce, AI tools, compliance workflow, and fraud management.</p>
+    </div>
+
+    <div class="projects-grid">
+      <!-- Project 1 -->
+      <div class="project-card">
+        <div class="project-header-bg">
+          <span class="project-category">AI & MCP Integration</span>
+          <i class="fa-solid fa-chart-line fa-2x" style="color: var(--primary-cyan);"></i>
+        </div>
+        <div class="project-content">
+          <h3 class="project-title">MCP Analytics Engine</h3>
+          <p class="project-desc">Integrated an MCP (Model Context Protocol) analytics layer enabling AI agents like Claude to execute live `get_sales_stats` stored procedures across 65+ retail store locations with SHA-256 API security.</p>
+          <div class="project-tags">
+            <span class="tag">C#</span>
+            <span class="tag">ASP.NET Core</span>
+            <span class="tag">MCP Protocol</span>
+            <span class="tag">SQL Server</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card">
+        <div class="project-header-bg">
+          <span class="project-category">LLM E-Commerce</span>
+          <i class="fa-solid fa-comments fa-2x" style="color: var(--accent-purple);"></i>
+        </div>
+        <div class="project-content">
+          <h3 class="project-title">LLM Shop Assistant</h3>
+          <p class="project-desc">Built a multi-provider LLM chat assistant for an e-commerce platform to handle product discovery, order support, and flexible model switching with natural language understanding.</p>
+          <div class="project-tags">
+            <span class="tag">ASP.NET Core</span>
+            <span class="tag">REST API</span>
+            <span class="tag">LLM Integration</span>
+            <span class="tag">JSON-RPC</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project-card">
+        <div class="project-header-bg">
+          <span class="project-category">Workflow Automation</span>
+          <i class="fa-solid fa-diagram-project fa-2x" style="color: var(--primary-blue);"></i>
+        </div>
+        <div class="project-content">
+          <h3 class="project-title">MSII Workflow System</h3>
+          <p class="project-desc">Designed multi-level approval workflows for issue submission, corrective & preventive actions, and real-time risk tracking dashboards using Clean Architecture and Angular.</p>
+          <div class="project-tags">
+            <span class="tag">ASP.NET Core</span>
+            <span class="tag">ADO.NET</span>
+            <span class="tag">Angular</span>
+            <span class="tag">SQL Server</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="project-card">
+        <div class="project-header-bg">
+          <span class="project-category">Enterprise Security</span>
+          <i class="fa-solid fa-shield-virus fa-2x" style="color: var(--accent-emerald);"></i>
+        </div>
+        <div class="project-content">
+          <h3 class="project-title">Fraud Management System</h3>
+          <p class="project-desc">Architected secure RESTful APIs for fraud reporting, investigation workflows, audit logging, and role-based access control (RBAC) across Admin, HR, Finance, and Legal users.</p>
+          <div class="project-tags">
+            <span class="tag">C#</span>
+            <span class="tag">EF Core</span>
+            <span class="tag">RBAC / JWT</span>
+            <span class="tag">SQL Audit Logs</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Terminal Sandbox Section -->
+  <section class="section" id="terminal">
+    <div class="section-header">
+      <span class="section-tag">Interactive Sandbox</span>
+      <h2 class="section-title">Backend Architecture Code Snippets</h2>
+      <p class="section-desc">Explore sample code snippets demonstrating Clean Architecture, MCP handlers, and JWT authentication.</p>
+    </div>
+
+    <div style="max-width: 900px; margin: 0 auto;" class="hero-code-card">
+      <div class="code-header">
+        <div class="code-dots">
+          <span class="code-dot dot-red"></span>
+          <span class="code-dot dot-yellow"></span>
+          <span class="code-dot dot-green"></span>
+        </div>
+        <div style="display: flex; gap: 15px;">
+          <button class="btn btn-glass" style="padding: 4px 12px; font-size: 0.75rem;" id="copyCodeBtn">
+            <i class="fa-solid fa-copy"></i> Copy Code
+          </button>
+        </div>
+      </div>
+      <div class="code-body">
+        <pre><code><span class="cm">// Clean Architecture Dependency Injection Setup</span>
+<span class="kw">public static class</span> <span class="type">DependencyInjection</span>
+{
+    <span class="kw">public static</span> <span class="type">IServiceCollection</span> <span class="func">AddInfrastructure</span>(<span class="kw">this</span> <span class="type">IServiceCollection</span> services, <span class="type">IConfiguration</span> config)
+    {
+        services.<span class="func">AddDbContext</span>&lt;<span class="type">ApplicationDbContext</span>&gt;(options =&gt;
+            options.<span class="func">UseSqlServer</span>(config.<span class="func">GetConnectionString</span>(<span class="str">"DefaultConnection"</span>)));
+
+        services.<span class="func">AddScoped</span>&lt;<span class="type">IJwtTokenGenerator</span>, <span class="type">JwtTokenGenerator</span>&gt;();
+        services.<span class="func">AddScoped</span>&lt;<span class="type">IMcpAnalyticsService</span>, <span class="type">McpAnalyticsService</span>&gt;();
+
+        <span class="kw">return</span> services;
+    }
+}</code></pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience & Education Section -->
+  <section class="section" id="experience">
+    <div class="section-header">
+      <span class="section-tag">Career History</span>
+      <h2 class="section-title">Professional Experience</h2>
+      <p class="section-desc">My professional journey building backend systems and full-stack enterprise applications.</p>
+    </div>
+
+    <div class="timeline">
+      <!-- Neosmar Solutions -->
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <h3 class="role-title">Software Developer</h3>
+          <div class="company-name">Neosmar Solutions</div>
+          <span class="period"><i class="fa-regular fa-calendar"></i> Apr 2026 – Present</span>
+          <ul class="timeline-list">
+            <li>Built and maintained web application modules using ASP.NET Core, C#, and ASP.NET MVC in an agile environment.</li>
+            <li>Designed and consumed REST APIs following Clean Architecture principles for internal tools.</li>
+            <li>Integrated MCP analytics layer enabling AI-driven sales reporting through Claude with SHA-256 authentication.</li>
+            <li>Built `get_sales_stats` stored procedure query execution tool returning store KPIs across 65+ locations.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Talent On Lease -->
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <h3 class="role-title">Software Developer</h3>
+          <div class="company-name">Talent On Lease</div>
+          <span class="period"><i class="fa-regular fa-calendar"></i> Feb 2025 – Mar 2026</span>
+          <ul class="timeline-list">
+            <li>Developed and maintained Web APIs using ASP.NET Core and C# with EF Core and ADO.NET database operations.</li>
+            <li>Built scalable Angular SPAs using components, services, and routing integrated with backend Web APIs.</li>
+            <li>Engineered Management Self-Identified Issues (MSII) workflow system with multi-level approval role-based security.</li>
+            <li>Developed REST APIs for Fraud Management System with audit logs and SQL Server procedures.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Education & Certification -->
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <h3 class="role-title">B.Tech in Computer Science & Engineering</h3>
+          <div class="company-name">Jai Narain College of Technology (JNCT)</div>
+          <span class="period"><i class="fa-regular fa-calendar"></i> 2020 – 2024 | CGPA: 7.7</span>
+          <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 8px;">
+            Certified in <strong>Full Stack Development</strong> from TAP Academy, Bangalore.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Footer Section -->
+  <footer class="footer" id="contact">
+    <div class="footer-content">
+      <span class="section-tag">Get In Touch</span>
+      <h2 class="section-title">Let's Connect & Build Together</h2>
+      <p class="section-desc">Open for Software Developer & .NET Backend roles across India & Remote options.</p>
+
+      <div class="contact-cards">
+        <a href="mailto:aweshjha1000@gmail.com" class="contact-card">
+          <i class="fa-solid fa-envelope" style="color: var(--primary-cyan);"></i>
+          <span>aweshjha1000@gmail.com</span>
+        </a>
+        <a href="tel:+917463849477" class="contact-card">
+          <i class="fa-solid fa-phone" style="color: var(--primary-blue);"></i>
+          <span>+91 74638 49477</span>
+        </a>
+        <a href="https://linkedin.com/in/avesh-kumar" target="_blank" class="contact-card">
+          <i class="fa-brands fa-linkedin" style="color: #0a66c2;"></i>
+          <span>LinkedIn</span>
+        </a>
+        <a href="https://github.com/Jhaavesh" target="_blank" class="contact-card">
+          <i class="fa-brands fa-github"></i>
+          <span>GitHub</span>
+        </a>
+      </div>
+
+      <a href="avesh resume.pdf" download class="btn btn-primary" style="margin-top: 20px;">
+        <i class="fa-solid fa-file-pdf"></i> Download Full Resume (PDF)
+      </a>
+    </div>
+
+    <div class="footer-copy">
+      &copy; 2026 Avesh Kumar. Engineered with HTML, Vanilla CSS & Modern JS.
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
