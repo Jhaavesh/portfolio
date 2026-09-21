@@ -6,7 +6,7 @@
   <style>
     @page {
       size: A4;
-      margin: 8mm 10mm 8mm 10mm;
+      margin: 8mm 12mm 8mm 12mm;
     }
     * {
       box-sizing: border-box;
@@ -14,51 +14,52 @@
       padding: 0;
     }
     body {
-      font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
-      color: #1f2937;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      color: #000;
       background: #fff;
-      font-size: 8.5pt;
-      line-height: 1.25;
+      font-size: 8.8pt;
+      line-height: 1.3;
     }
     .header {
       text-align: center;
-      padding-bottom: 4px;
-      margin-bottom: 6px;
-      border-bottom: 2px solid #0284c7;
+      padding-bottom: 6px;
+      margin-bottom: 8px;
     }
     .name {
-      font-size: 19pt;
+      font-size: 22pt;
       font-weight: 700;
-      color: #0f172a;
-      letter-spacing: 0.8px;
-      margin-bottom: 2px;
-      text-transform: uppercase;
+      color: #1a5276;
+      letter-spacing: 0.5px;
+      margin-bottom: 4px;
+      text-transform: UPPERCASE;
     }
     .contact-info {
-      font-size: 8.2pt;
-      color: #334155;
+      font-size: 8.5pt;
+      color: #222;
     }
     .contact-info a {
-      color: #0284c7;
+      color: #1a5276;
       text-decoration: none;
-      font-weight: 600;
     }
     .contact-sep {
       margin: 0 4px;
-      color: #94a3b8;
+      color: #444;
+    }
+    .location-line {
+      margin-bottom: 3px;
     }
     .section {
-      margin-bottom: 5px;
+      margin-bottom: 8px;
     }
     .section-title {
-      font-size: 9.5pt;
+      font-size: 10.5pt;
       font-weight: 700;
-      color: #0284c7;
-      text-transform: uppercase;
-      border-bottom: 1.2px solid #0284c7;
+      color: #1a5276;
+      text-transform: UPPERCASE;
+      border-bottom: 1.5px solid #1a5276;
       padding-bottom: 1px;
-      margin-bottom: 3px;
-      letter-spacing: 0.4px;
+      margin-bottom: 4px;
+      letter-spacing: 0.5px;
     }
     .summary-text {
       text-align: justify;
@@ -68,58 +69,62 @@
       border-collapse: collapse;
     }
     .skills-table td {
-      padding: 1px 0;
+      padding: 1.5px 0;
       vertical-align: top;
     }
     .skill-category {
       font-weight: 700;
-      width: 24%;
-      color: #0f172a;
+      width: 28%;
+      color: #1a5276;
     }
     .skill-list {
-      width: 76%;
+      width: 72%;
     }
     .job-header {
       display: flex;
       justify-content: space-between;
       font-weight: 700;
-      font-size: 9pt;
-      color: #0f172a;
-      margin-top: 2px;
-      margin-bottom: 1px;
+      font-size: 9.5pt;
+      color: #000;
+      margin-top: 4px;
+      margin-bottom: 2px;
+    }
+    .job-title {
+      font-weight: 700;
+      color: #1a5276;
     }
     .company {
-      color: #0284c7;
+      font-weight: 700;
+      color: #000;
     }
     .job-dates {
-      color: #64748b;
-      font-size: 8pt;
-      font-weight: 600;
+      color: #444;
+      font-size: 8.5pt;
+      font-weight: 400;
     }
     .project-title {
       font-weight: 700;
-      color: #334155;
-      margin-top: 2px;
-      margin-bottom: 1px;
-      font-size: 8.5pt;
-      font-style: italic;
+      color: #000;
+      margin-top: 3px;
+      margin-bottom: 2px;
+      font-size: 9pt;
     }
     ul {
-      margin-left: 14px;
-      margin-bottom: 2px;
+      margin-left: 16px;
+      margin-bottom: 3px;
     }
     li {
-      margin-bottom: 1px;
+      margin-bottom: 1.5px;
       text-align: justify;
     }
     .edu-item, .cert-item {
-      margin-bottom: 1px;
+      margin-bottom: 2px;
     }
     .edu-degree {
       font-weight: 700;
     }
     .edu-inst {
-      color: #475569;
+      color: #222;
     }
   </style>
 </head>
@@ -128,7 +133,7 @@
   <div class="header">
     <div class="name">AVESH KUMAR</div>
     <div class="contact-info">
-      Surat, Gujarat, India <span class="contact-sep">|</span>
+      <div class="location-line">Surat, Gujarat, India</div>
       +91 74638 49477 <span class="contact-sep">|</span>
       <a href="mailto:jhaavesh97@gmail.com">jhaavesh97@gmail.com</a> <span class="contact-sep">|</span>
       <a href="https://linkedin.com/in/avesh-kumar" target="_blank">linkedin.com/in/avesh-kumar</a> <span class="contact-sep">|</span>
@@ -138,17 +143,17 @@
   </div>
 
   <div class="section">
-    <div class="section-title">Professional Summary</div>
+    <div class="section-title">PROFESSIONAL SUMMARY</div>
     <p class="summary-text">
-      .NET Developer with 1.5+ years of experience building backend systems and REST APIs using C#, ASP.NET Core, and ASP.NET MVC, with hands-on delivery of Angular front-ends for full-stack features, often owning features end-to-end in agile team environments. Strong in REST API design, SQL optimization, JWT authentication, role-based access control (RBAC), and clean architecture. Experienced integrating AI-driven tools via the Model Context Protocol (MCP). Actively seeking full-stack or backend developer opportunities working with .NET and Angular.
+      .NET Developer with 1.5+ years of experience building backend systems and REST APIs using C#, ASP.NET Core, and ASP.NET MVC, with hands-on delivery of Angular front-ends for full-stack features, often owning features end-to-end in agile team environments. Strong in REST API design, SQL optimization, JWT-based authentication, role-based access control, and clean architecture. Experienced integrating AI-driven tools via the Model Context Protocol (MCP). Actively seeking full-stack or backend developer opportunities working with .NET and Angular.
     </p>
   </div>
 
   <div class="section">
-    <div class="section-title">Technical Skills</div>
+    <div class="section-title">TECHNICAL SKILLS</div>
     <table class="skills-table">
       <tr>
-        <td class="skill-category">Languages & Frameworks</td>
+        <td class="skill-category">Languages and Frameworks</td>
         <td class="skill-list">C#, ASP.NET Core, ASP.NET MVC, Web API, Angular, JavaScript, HTML5, CSS3</td>
       </tr>
       <tr>
@@ -156,23 +161,23 @@
         <td class="skill-list">SQL Server, MySQL, T-SQL, Stored Procedures</td>
       </tr>
       <tr>
-        <td class="skill-category">Architecture & Security</td>
+        <td class="skill-category">Architecture and Security</td>
         <td class="skill-list">Entity Framework Core, ADO.NET, REST API Design, JWT Authentication, Role-Based Access Control (RBAC), Clean Architecture</td>
       </tr>
       <tr>
-        <td class="skill-category">Tools & Practices</td>
+        <td class="skill-category">Tools and Practices</td>
         <td class="skill-list">Swagger / OpenAPI, Git, Postman, Unit Testing, Agile / Scrum</td>
       </tr>
     </table>
   </div>
 
   <div class="section">
-    <div class="section-title">Professional Experience</div>
+    <div class="section-title">PROFESSIONAL EXPERIENCE</div>
     
     <div>
       <div class="job-header">
-        <div>Software Developer <span class="company">| Neosmar Solutions</span></div>
-        <div class="job-dates">April 2026 – Present</div>
+        <div><span class="job-title">Software Developer</span> | <span class="company">Neosmar Solutions</span></div>
+        <div class="job-dates">April 2026 - Present</div>
       </div>
       <ul>
         <li>Build and maintain web application modules using ASP.NET Core, C#, and ASP.NET MVC in an agile team environment.</li>
@@ -194,10 +199,10 @@
       </ul>
     </div>
 
-    <div style="margin-top: 3px;">
+    <div style="margin-top: 4px;">
       <div class="job-header">
-        <div>Software Developer <span class="company">| Talent On Lease</span></div>
-        <div class="job-dates">February 2025 – March 2026</div>
+        <div><span class="job-title">Software Developer</span> | <span class="company">Talent On Lease</span></div>
+        <div class="job-dates">February 2025 - March 2026</div>
       </div>
       <ul>
         <li>Developed and maintained Web APIs using ASP.NET Core and C# following layered and clean architecture.</li>
@@ -221,20 +226,20 @@
   </div>
 
   <div class="section">
-    <div class="section-title">Education</div>
+    <div class="section-title">EDUCATION</div>
     <div class="edu-item">
       <div style="display: flex; justify-content: space-between;">
         <span class="edu-degree">Bachelor of Technology (B.Tech) in Computer Science and Engineering</span>
-        <span class="job-dates">2020 – 2024</span>
+        <span class="job-dates">2020 - 2024</span>
       </div>
       <div class="edu-inst">Jai Narain College of Technology | CGPA: 7.7</div>
     </div>
   </div>
 
   <div class="section">
-    <div class="section-title">Certifications</div>
+    <div class="section-title">CERTIFICATIONS</div>
     <div class="cert-item">
-      • Full Stack Development – TAP Academy, Bangalore
+      • Full Stack Development - TAP Academy, Bangalore
     </div>
   </div>
 
