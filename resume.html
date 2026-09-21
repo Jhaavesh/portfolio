@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Avesh Kumar Resume</title>
+  <style>
+    @page {
+      size: A4;
+      margin: 8mm 10mm 8mm 10mm;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+      color: #1f2937;
+      background: #fff;
+      font-size: 8.5pt;
+      line-height: 1.25;
+    }
+    .header {
+      text-align: center;
+      padding-bottom: 4px;
+      margin-bottom: 6px;
+      border-bottom: 2px solid #0284c7;
+    }
+    .name {
+      font-size: 19pt;
+      font-weight: 700;
+      color: #0f172a;
+      letter-spacing: 0.8px;
+      margin-bottom: 2px;
+      text-transform: uppercase;
+    }
+    .contact-info {
+      font-size: 8.2pt;
+      color: #334155;
+    }
+    .contact-info a {
+      color: #0284c7;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .contact-sep {
+      margin: 0 4px;
+      color: #94a3b8;
+    }
+    .section {
+      margin-bottom: 5px;
+    }
+    .section-title {
+      font-size: 9.5pt;
+      font-weight: 700;
+      color: #0284c7;
+      text-transform: uppercase;
+      border-bottom: 1.2px solid #0284c7;
+      padding-bottom: 1px;
+      margin-bottom: 3px;
+      letter-spacing: 0.4px;
+    }
+    .summary-text {
+      text-align: justify;
+    }
+    .skills-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    .skills-table td {
+      padding: 1px 0;
+      vertical-align: top;
+    }
+    .skill-category {
+      font-weight: 700;
+      width: 24%;
+      color: #0f172a;
+    }
+    .skill-list {
+      width: 76%;
+    }
+    .job-header {
+      display: flex;
+      justify-content: space-between;
+      font-weight: 700;
+      font-size: 9pt;
+      color: #0f172a;
+      margin-top: 2px;
+      margin-bottom: 1px;
+    }
+    .company {
+      color: #0284c7;
+    }
+    .job-dates {
+      color: #64748b;
+      font-size: 8pt;
+      font-weight: 600;
+    }
+    .project-title {
+      font-weight: 700;
+      color: #334155;
+      margin-top: 2px;
+      margin-bottom: 1px;
+      font-size: 8.5pt;
+      font-style: italic;
+    }
+    ul {
+      margin-left: 14px;
+      margin-bottom: 2px;
+    }
+    li {
+      margin-bottom: 1px;
+      text-align: justify;
+    }
+    .edu-item, .cert-item {
+      margin-bottom: 1px;
+    }
+    .edu-degree {
+      font-weight: 700;
+    }
+    .edu-inst {
+      color: #475569;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <div class="name">AVESH KUMAR</div>
+    <div class="contact-info">
+      Surat, Gujarat, India <span class="contact-sep">|</span>
+      +91 74638 49477 <span class="contact-sep">|</span>
+      <a href="mailto:jhaavesh97@gmail.com">jhaavesh97@gmail.com</a> <span class="contact-sep">|</span>
+      <a href="https://linkedin.com/in/avesh-kumar" target="_blank">linkedin.com/in/avesh-kumar</a> <span class="contact-sep">|</span>
+      <a href="https://github.com/Jhaavesh" target="_blank">github.com/Jhaavesh</a> <span class="contact-sep">|</span>
+      <a href="https://jhaavesh.github.io/portfolio/" target="_blank">jhaavesh.github.io/portfolio</a>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Professional Summary</div>
+    <p class="summary-text">
+      .NET Developer with 1.5+ years of experience building backend systems and REST APIs using C#, ASP.NET Core, and ASP.NET MVC, with hands-on delivery of Angular front-ends for full-stack features, often owning features end-to-end in agile team environments. Strong in REST API design, SQL optimization, JWT authentication, role-based access control (RBAC), and clean architecture. Experienced integrating AI-driven tools via the Model Context Protocol (MCP). Actively seeking full-stack or backend developer opportunities working with .NET and Angular.
+    </p>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Technical Skills</div>
+    <table class="skills-table">
+      <tr>
+        <td class="skill-category">Languages & Frameworks</td>
+        <td class="skill-list">C#, ASP.NET Core, ASP.NET MVC, Web API, Angular, JavaScript, HTML5, CSS3</td>
+      </tr>
+      <tr>
+        <td class="skill-category">Databases</td>
+        <td class="skill-list">SQL Server, MySQL, T-SQL, Stored Procedures</td>
+      </tr>
+      <tr>
+        <td class="skill-category">Architecture & Security</td>
+        <td class="skill-list">Entity Framework Core, ADO.NET, REST API Design, JWT Authentication, Role-Based Access Control (RBAC), Clean Architecture</td>
+      </tr>
+      <tr>
+        <td class="skill-category">Tools & Practices</td>
+        <td class="skill-list">Swagger / OpenAPI, Git, Postman, Unit Testing, Agile / Scrum</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Professional Experience</div>
+    
+    <div>
+      <div class="job-header">
+        <div>Software Developer <span class="company">| Neosmar Solutions</span></div>
+        <div class="job-dates">April 2026 – Present</div>
+      </div>
+      <ul>
+        <li>Build and maintain web application modules using ASP.NET Core, C#, and ASP.NET MVC in an agile team environment.</li>
+        <li>Design and consume REST APIs for internal business tools, following clean architecture principles.</li>
+        <li>Write optimized SQL queries and stored procedures for reporting and data management.</li>
+        <li>Participate in code reviews, unit testing, and Git-based collaborative development.</li>
+      </ul>
+
+      <div class="project-title">MCP (Model Context Protocol) Analytics Integration</div>
+      <ul>
+        <li>Integrated an MCP analytics layer enabling AI-driven sales reporting through Claude, secured with SHA-256 API key authentication and rate limiting.</li>
+        <li>Built a "Get Sales Stats" tool querying live SQL Server stored procedures to return store-level KPIs across 65+ locations, enabling real-time business decision-making.</li>
+      </ul>
+
+      <div class="project-title">LLM-Powered E-Commerce Shop Assistant</div>
+      <ul>
+        <li>Integrated an LLM-powered chat assistant for an e-commerce platform to handle product queries and order support, reducing manual customer service workload.</li>
+        <li>Designed the integration to support multiple LLM providers and models with flexible switching and natural language understanding.</li>
+      </ul>
+    </div>
+
+    <div style="margin-top: 3px;">
+      <div class="job-header">
+        <div>Software Developer <span class="company">| Talent On Lease</span></div>
+        <div class="job-dates">February 2025 – March 2026</div>
+      </div>
+      <ul>
+        <li>Developed and maintained Web APIs using ASP.NET Core and C# following layered and clean architecture.</li>
+        <li>Implemented database operations using ADO.NET and Entity Framework Core; optimized SQL queries for performance.</li>
+        <li>Built scalable Angular SPAs using components, services, and routing, integrated with backend Web APIs.</li>
+        <li>Managed debugging, testing, deployments, and Git-based version control.</li>
+      </ul>
+
+      <div class="project-title">MSII (Management Self-Identified Issues) Workflow System</div>
+      <ul>
+        <li>Developed end-to-end workflows for issue submission, corrective and preventive actions, and risk tracking across multiple departments.</li>
+        <li>Implemented multi-level approvals with role-based access control and real-time tracking dashboards for management visibility.</li>
+      </ul>
+
+      <div class="project-title">Fraud Management System</div>
+      <ul>
+        <li>Built REST APIs for fraud reporting, investigation, and review workflows with secure RBAC for Admin, HR, Finance, and Legal users.</li>
+        <li>Developed optimized SQL stored procedures and audit logs for complete activity history tracking and compliance requirements.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Education</div>
+    <div class="edu-item">
+      <div style="display: flex; justify-content: space-between;">
+        <span class="edu-degree">Bachelor of Technology (B.Tech) in Computer Science and Engineering</span>
+        <span class="job-dates">2020 – 2024</span>
+      </div>
+      <div class="edu-inst">Jai Narain College of Technology | CGPA: 7.7</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Certifications</div>
+    <div class="cert-item">
+      • Full Stack Development – TAP Academy, Bangalore
+    </div>
+  </div>
+
+</body>
+</html>
