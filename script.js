@@ -67,7 +67,27 @@ document.addEventListener('DOMContentLoaded', () => {
         link.classList.add('active');
       }
     });
-  });
+  // 4. Mobile Menu Toggle
+  const mobileToggle = document.getElementById('mobileToggle');
+  const navLinksContainer = document.querySelector('.nav-links');
+
+  if (mobileToggle && navLinksContainer) {
+    mobileToggle.addEventListener('click', () => {
+      navLinksContainer.classList.toggle('active');
+      const isOpen = navLinksContainer.classList.contains('active');
+      mobileToggle.innerHTML = isOpen ? '<i class="fa-solid fa-xmark"></i>' : '<i class="fa-solid fa-bars"></i>';
+    });
+
+    // Close menu when a link is clicked
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        if (navLinksContainer.classList.contains('active')) {
+          navLinksContainer.classList.remove('active');
+          mobileToggle.innerHTML = '<i class="fa-solid fa-bars"></i>';
+        }
+      });
+    });
+  }
 
 });
 
